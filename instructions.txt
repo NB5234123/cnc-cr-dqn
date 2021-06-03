@@ -1,0 +1,21 @@
+1) Install dqn_zoo:
+git clone https://github.com/deepmind/dqn_zoo.git
+cd dqn_zoo/
+git checkout 3bd1bbf7362e3310611903752b0dd4032646d462
+
+and follow dqn_zoo instructions to install its python dependencies (listed in docker-requirement.txt).
+2) add the dqn_zoo directory to PYTHONPATH environment variable
+3) The experiments were run as follow
+
+# results with cnc-cr-dqn were obtained with the following command with seed in {1,2,3}
+python run_atari.py --environment_name=<game> --seed=<seed> --symm --use_gym  
+
+ 
+
+# results with nc-cr-dqn were obtained with the following command with seed in {1,2,3}
+python run_atari.py --environment_name=<game> --seed=<seed> --nc --use_gym  
+
+ 
+
+# results with cr-dqn were obtained with the following command with seed in {1,2,3}
+python run_atari.py --environment_name=<game> --seed=<seed> --use_gym  
