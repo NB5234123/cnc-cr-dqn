@@ -1,0 +1,690 @@
+nohup: ignoring input
+I0518 20:55:45.994305 140163970426688 run_atari_cramer_staircase.py:780] --additional_discount=0.99
+--batch_size=32
+--compress_state
+--cramer
+--environment_height=84
+--environment_name=frostbite
+--environment_width=84
+--eval_exploration_epsilon=0.001
+--noexp_bonus
+--exploration_epsilon_begin_value=1.0
+--exploration_epsilon_decay_frame_fraction=0.02
+--exploration_epsilon_end_value=0.01
+--learn_period=16
+--learning_rate=5e-05
+--max_abs_reward=1.0
+--max_frames_per_episode=108000
+--max_global_grad_norm=10.0
+--min_replay_capacity_fraction=0.05
+--n_layers=1
+--n_nodes=512
+--nc
+--num_action_repeats=4
+--num_eval_frames=500000
+--num_iterations=200
+--num_quantiles=201
+--num_stacked_frames=4
+--num_train_frames=1000000
+--optimizer_epsilon=0.0003125
+--replay_capacity=1000000
+--results_csv_path=./resultsCramer_ncLR0.00005_s2.csv
+--seed=2
+--nosymm
+--target_network_update_period=40000
+--use_gym
+--nohelp
+--nohelpfull
+--nohelpshort
+--nohelpxml
+--noonly_check_args
+--nopdb_post_mortem
+--norun_with_pdb
+--norun_with_profiling
+--use_cprofile_for_profiling
+--noalsologtostderr
+--log_dir=
+--nologtostderr
+--showprefixforinfo
+--stderrthreshold=fatal
+--verbosity=0
+--test_random_seed=301
+--test_randomize_ordering_seed=
+--test_srcdir=
+--test_tmpdir=/tmp/absl_testing
+--xml_output_file=
+--nochex_assert_multiple_cpu_devices
+--chex_n_cpu_devices=1
+--chex_skip_pmap_variant_if_single_device
+--exclude_test_targets=
+--experimental_cpp_jit
+--jax_backend_target=local
+--nojax_check_tracer_leaks
+--nojax_debug_infs
+--nojax_debug_nans
+--nojax_disable_jit
+--nojax_disable_most_optimizations
+--nojax_enable_checks
+--nojax_enable_x64
+--nojax_host_callback_inline
+--jax_host_callback_max_queue_byte_size=256000000
+--nojax_log_compiles
+--jax_numpy_rank_promotion=raise
+--jax_omnistaging
+--jax_platform_name=gpu
+--nojax_skip_slow_tests
+--jax_test_dut=
+--jax_tracer_error_num_traceback_frames=5
+--jax_xla_backend=xla
+--num_generated_cases=10
+--test_targets=
+
+I0518 20:55:46.078262 140163970426688 run_atari_cramer_staircase.py:783] QR-DQN with Cramer on Atari on gpu.
+I0518 20:55:46.760660 140163970426688 run_atari_cramer_staircase.py:807] Environment: frostbite
+I0518 20:55:46.760987 140163970426688 run_atari_cramer_staircase.py:808] Action spec: DiscreteArray(shape=(), dtype=int32, name=action, minimum=0, maximum=17, num_values=18)
+I0518 20:55:46.761246 140163970426688 run_atari_cramer_staircase.py:809] Observation spec: (Array(shape=(210, 160, 3), dtype=dtype('uint8'), name='rgb'), Array(shape=(), dtype=dtype('int32'), name='lives'))
+I0518 20:55:46.761436 140163970426688 run_atari_cramer_staircase.py:823] NC network
+I0518 20:55:52.597843 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 0.
+I0518 20:55:52.598312 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 0.
+I0518 21:03:44.784662 140163970426688 run_atari_cramer_staircase.py:967] iteration:   0, frame:     0, eval_episode_return:  0.00, train_episode_return:  nan, eval_num_episodes:   5, train_num_episodes:   0, eval_frame_rate: 1059, train_frame_rate:  nan, train_exploration_epsilon: 1.000, normalized_return: -0.015, capped_normalized_return: -0.015, human_gap: 1.015
+I0518 21:03:45.106695 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 1.
+I0518 21:07:08.465574 140163970426688 run_atari_cramer_staircase.py:691] Begin learning
+I0518 21:33:16.330592 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 1.
+I0518 21:41:11.843070 140163970426688 run_atari_cramer_staircase.py:967] iteration:   1, frame: 1000000, eval_episode_return:  107.17, train_episode_return:  74.50, eval_num_episodes: 361, train_num_episodes: 646, eval_frame_rate: 1052, train_frame_rate:  565, train_exploration_epsilon: 0.802, normalized_return: 0.010, capped_normalized_return: 0.010, human_gap: 0.990
+I0518 21:41:12.164872 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 2.
+I0518 22:15:02.494660 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 2.
+I0518 22:22:58.279691 140163970426688 run_atari_cramer_staircase.py:967] iteration:   2, frame: 2000000, eval_episode_return:  73.25, train_episode_return:  91.38, eval_num_episodes: 397, train_num_episodes: 615, eval_frame_rate: 1051, train_frame_rate:  493, train_exploration_epsilon: 0.555, normalized_return: 0.002, capped_normalized_return: 0.002, human_gap: 0.998
+I0518 22:22:58.601892 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 3.
+I0518 22:57:06.749876 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 3.
+I0518 23:05:01.160302 140163970426688 run_atari_cramer_staircase.py:967] iteration:   3, frame: 3000000, eval_episode_return:  210.33, train_episode_return:  152.24, eval_num_episodes: 243, train_num_episodes: 535, eval_frame_rate: 1054, train_frame_rate:  488, train_exploration_epsilon: 0.307, normalized_return: 0.034, capped_normalized_return: 0.034, human_gap: 0.966
+I0518 23:05:01.482085 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 4.
+I0518 23:39:42.929073 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 4.
+I0518 23:47:21.987095 140163970426688 run_atari_cramer_staircase.py:967] iteration:   4, frame: 4000000, eval_episode_return:  223.35, train_episode_return:  208.83, eval_num_episodes: 203, train_num_episodes: 469, eval_frame_rate: 1089, train_frame_rate:  480, train_exploration_epsilon: 0.060, normalized_return: 0.037, capped_normalized_return: 0.037, human_gap: 0.963
+I0518 23:47:22.309613 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 5.
+I0519 00:22:38.681935 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 5.
+I0519 00:30:07.087918 140163970426688 run_atari_cramer_staircase.py:967] iteration:   5, frame: 5000000, eval_episode_return:  267.79, train_episode_return:  248.71, eval_num_episodes: 204, train_num_episodes: 404, eval_frame_rate: 1115, train_frame_rate:  473, train_exploration_epsilon: 0.010, normalized_return: 0.047, capped_normalized_return: 0.047, human_gap: 0.953
+I0519 00:30:07.409960 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 6.
+I0519 01:05:43.418366 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 6.
+I0519 01:13:11.493300 140163970426688 run_atari_cramer_staircase.py:967] iteration:   6, frame: 6000000, eval_episode_return:  263.42, train_episode_return:  292.32, eval_num_episodes: 111, train_num_episodes: 383, eval_frame_rate: 1116, train_frame_rate:  468, train_exploration_epsilon: 0.010, normalized_return: 0.046, capped_normalized_return: 0.046, human_gap: 0.954
+I0519 01:13:11.815294 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 7.
+I0519 01:48:59.062610 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 7.
+I0519 01:56:08.528309 140163970426688 run_atari_cramer_staircase.py:967] iteration:   7, frame: 7000000, eval_episode_return:  318.06, train_episode_return:  285.83, eval_num_episodes: 180, train_num_episodes: 379, eval_frame_rate: 1164, train_frame_rate:  466, train_exploration_epsilon: 0.010, normalized_return: 0.059, capped_normalized_return: 0.059, human_gap: 0.941
+I0519 01:56:08.850464 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 8.
+I0519 02:32:33.217656 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 8.
+I0519 02:39:40.635990 140163970426688 run_atari_cramer_staircase.py:967] iteration:   8, frame: 8000000, eval_episode_return:  258.02, train_episode_return:  468.40, eval_num_episodes: 192, train_num_episodes: 349, eval_frame_rate: 1170, train_frame_rate:  458, train_exploration_epsilon: 0.010, normalized_return: 0.045, capped_normalized_return: 0.045, human_gap: 0.955
+I0519 02:39:40.960545 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 9.
+I0519 03:16:48.781418 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 9.
+I0519 03:23:58.202179 140163970426688 run_atari_cramer_staircase.py:967] iteration:   9, frame: 9000000, eval_episode_return:  269.94, train_episode_return:  442.66, eval_num_episodes: 171, train_num_episodes: 320, eval_frame_rate: 1164, train_frame_rate:  449, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 03:23:58.524354 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 10.
+I0519 04:01:20.685021 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 10.
+I0519 04:08:04.672191 140163970426688 run_atari_cramer_staircase.py:967] iteration:  10, frame: 10000000, eval_episode_return:  663.31, train_episode_return:  396.35, eval_num_episodes: 133, train_num_episodes: 326, eval_frame_rate: 1238, train_frame_rate:  446, train_exploration_epsilon: 0.010, normalized_return: 0.140, capped_normalized_return: 0.140, human_gap: 0.860
+I0519 04:08:04.996223 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 11.
+I0519 04:44:46.159964 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 11.
+I0519 04:51:10.995613 140163970426688 run_atari_cramer_staircase.py:967] iteration:  11, frame: 11000000, eval_episode_return:  265.63, train_episode_return:  487.09, eval_num_episodes: 229, train_num_episodes: 357, eval_frame_rate: 1299, train_frame_rate:  454, train_exploration_epsilon: 0.010, normalized_return: 0.047, capped_normalized_return: 0.047, human_gap: 0.953
+I0519 04:51:11.317368 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 12.
+I0519 05:14:54.959957 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 12.
+I0519 05:20:20.588205 140163970426688 run_atari_cramer_staircase.py:967] iteration:  12, frame: 12000000, eval_episode_return:  228.71, train_episode_return:  473.30, eval_num_episodes: 217, train_num_episodes: 355, eval_frame_rate: 1535, train_frame_rate:  702, train_exploration_epsilon: 0.010, normalized_return: 0.038, capped_normalized_return: 0.038, human_gap: 0.962
+I0519 05:20:20.904047 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 13.
+I0519 05:44:00.967928 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 13.
+I0519 05:49:28.780821 140163970426688 run_atari_cramer_staircase.py:967] iteration:  13, frame: 13000000, eval_episode_return:  1116.24, train_episode_return:  422.86, eval_num_episodes: 149, train_num_episodes: 381, eval_frame_rate: 1525, train_frame_rate:  704, train_exploration_epsilon: 0.010, normalized_return: 0.246, capped_normalized_return: 0.246, human_gap: 0.754
+I0519 05:49:29.101635 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 14.
+I0519 06:13:10.679170 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 14.
+I0519 06:18:45.634994 140163970426688 run_atari_cramer_staircase.py:967] iteration:  14, frame: 14000000, eval_episode_return:  567.60, train_episode_return:  476.25, eval_num_episodes: 167, train_num_episodes: 360, eval_frame_rate: 1493, train_frame_rate:  703, train_exploration_epsilon: 0.010, normalized_return: 0.118, capped_normalized_return: 0.118, human_gap: 0.882
+I0519 06:18:45.953266 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 15.
+I0519 06:42:29.749543 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 15.
+I0519 06:48:01.181838 140163970426688 run_atari_cramer_staircase.py:967] iteration:  15, frame: 15000000, eval_episode_return:  272.61, train_episode_return:  426.12, eval_num_episodes: 188, train_num_episodes: 320, eval_frame_rate: 1509, train_frame_rate:  702, train_exploration_epsilon: 0.010, normalized_return: 0.049, capped_normalized_return: 0.049, human_gap: 0.951
+I0519 06:48:01.499080 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 16.
+I0519 07:11:49.239207 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 16.
+I0519 07:17:24.585193 140163970426688 run_atari_cramer_staircase.py:967] iteration:  16, frame: 16000000, eval_episode_return:  258.21, train_episode_return:  567.31, eval_num_episodes: 195, train_num_episodes: 349, eval_frame_rate: 1491, train_frame_rate:  700, train_exploration_epsilon: 0.010, normalized_return: 0.045, capped_normalized_return: 0.045, human_gap: 0.955
+I0519 07:17:24.905240 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 17.
+I0519 07:41:12.203031 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 17.
+I0519 07:46:39.895150 140163970426688 run_atari_cramer_staircase.py:967] iteration:  17, frame: 17000000, eval_episode_return:  263.48, train_episode_return:  477.70, eval_num_episodes: 181, train_num_episodes: 352, eval_frame_rate: 1526, train_frame_rate:  701, train_exploration_epsilon: 0.010, normalized_return: 0.046, capped_normalized_return: 0.046, human_gap: 0.954
+I0519 07:46:40.211280 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 18.
+I0519 08:10:27.094698 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 18.
+I0519 08:15:55.631520 140163970426688 run_atari_cramer_staircase.py:967] iteration:  18, frame: 18000000, eval_episode_return:  496.89, train_episode_return:  400.26, eval_num_episodes: 177, train_num_episodes: 349, eval_frame_rate: 1522, train_frame_rate:  701, train_exploration_epsilon: 0.010, normalized_return: 0.101, capped_normalized_return: 0.101, human_gap: 0.899
+I0519 08:15:55.947520 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 19.
+I0519 08:39:37.899237 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 19.
+I0519 08:45:09.407875 140163970426688 run_atari_cramer_staircase.py:967] iteration:  19, frame: 19000000, eval_episode_return:  269.93, train_episode_return:  318.57, eval_num_episodes: 140, train_num_episodes: 350, eval_frame_rate: 1508, train_frame_rate:  703, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 08:45:09.723709 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 20.
+I0519 09:08:52.706749 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 20.
+I0519 09:14:28.135185 140163970426688 run_atari_cramer_staircase.py:967] iteration:  20, frame: 20000000, eval_episode_return:  236.55, train_episode_return:  292.70, eval_num_episodes: 200, train_num_episodes: 367, eval_frame_rate: 1491, train_frame_rate:  703, train_exploration_epsilon: 0.010, normalized_return: 0.040, capped_normalized_return: 0.040, human_gap: 0.960
+I0519 09:14:28.451213 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 21.
+I0519 09:38:16.465371 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 21.
+I0519 09:43:45.701368 140163970426688 run_atari_cramer_staircase.py:967] iteration:  21, frame: 21000000, eval_episode_return:  397.85, train_episode_return:  285.72, eval_num_episodes: 186, train_num_episodes: 325, eval_frame_rate: 1519, train_frame_rate:  700, train_exploration_epsilon: 0.010, normalized_return: 0.078, capped_normalized_return: 0.078, human_gap: 0.922
+I0519 09:43:46.018014 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 22.
+I0519 10:07:31.670877 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 22.
+I0519 10:13:00.555490 140163970426688 run_atari_cramer_staircase.py:967] iteration:  22, frame: 22000000, eval_episode_return:  269.16, train_episode_return:  298.93, eval_num_episodes: 154, train_num_episodes: 373, eval_frame_rate: 1520, train_frame_rate:  701, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 10:13:00.871402 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 23.
+I0519 10:36:48.803987 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 23.
+I0519 10:42:15.298110 140163970426688 run_atari_cramer_staircase.py:967] iteration:  23, frame: 23000000, eval_episode_return:  260.00, train_episode_return:  365.00, eval_num_episodes:  11, train_num_episodes: 322, eval_frame_rate: 1531, train_frame_rate:  700, train_exploration_epsilon: 0.010, normalized_return: 0.046, capped_normalized_return: 0.046, human_gap: 0.954
+I0519 10:42:15.615648 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 24.
+I0519 11:05:56.802688 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 24.
+I0519 11:11:21.186172 140163970426688 run_atari_cramer_staircase.py:967] iteration:  24, frame: 24000000, eval_episode_return:  499.07, train_episode_return:  345.38, eval_num_episodes: 162, train_num_episodes: 236, eval_frame_rate: 1541, train_frame_rate:  704, train_exploration_epsilon: 0.010, normalized_return: 0.102, capped_normalized_return: 0.102, human_gap: 0.898
+I0519 11:11:21.503773 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 25.
+I0519 11:34:59.340179 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 25.
+I0519 11:40:25.844158 140163970426688 run_atari_cramer_staircase.py:967] iteration:  25, frame: 25000000, eval_episode_return:  816.84, train_episode_return:  392.96, eval_num_episodes: 155, train_num_episodes: 162, eval_frame_rate: 1531, train_frame_rate:  705, train_exploration_epsilon: 0.010, normalized_return: 0.176, capped_normalized_return: 0.176, human_gap: 0.824
+I0519 11:40:26.158874 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 26.
+I0519 12:03:52.978344 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 26.
+I0519 12:09:18.812468 140163970426688 run_atari_cramer_staircase.py:967] iteration:  26, frame: 26000000, eval_episode_return:  270.00, train_episode_return:  485.82, eval_num_episodes:   4, train_num_episodes: 177, eval_frame_rate: 1535, train_frame_rate:  711, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 12:09:19.127510 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 27.
+I0519 12:32:58.605310 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 27.
+I0519 12:38:23.518332 140163970426688 run_atari_cramer_staircase.py:967] iteration:  27, frame: 27000000, eval_episode_return:  275.75, train_episode_return:  490.58, eval_num_episodes: 146, train_num_episodes: 137, eval_frame_rate: 1539, train_frame_rate:  704, train_exploration_epsilon: 0.010, normalized_return: 0.049, capped_normalized_return: 0.049, human_gap: 0.951
+I0519 12:38:23.835734 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 28.
+I0519 13:02:15.062110 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 28.
+I0519 13:07:39.542463 140163970426688 run_atari_cramer_staircase.py:967] iteration:  28, frame: 28000000, eval_episode_return:  269.81, train_episode_return:  440.23, eval_num_episodes: 160, train_num_episodes: 217, eval_frame_rate: 1541, train_frame_rate:  699, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 13:07:39.862070 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 29.
+I0519 13:31:25.574065 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 29.
+I0519 13:36:56.066729 140163970426688 run_atari_cramer_staircase.py:967] iteration:  29, frame: 29000000, eval_episode_return:  819.74, train_episode_return:  415.23, eval_num_episodes: 116, train_num_episodes: 216, eval_frame_rate: 1513, train_frame_rate:  701, train_exploration_epsilon: 0.010, normalized_return: 0.177, capped_normalized_return: 0.177, human_gap: 0.823
+I0519 13:36:56.384205 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 30.
+I0519 14:00:52.558987 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 30.
+I0519 14:06:28.348413 140163970426688 run_atari_cramer_staircase.py:967] iteration:  30, frame: 30000000, eval_episode_return:  270.00, train_episode_return:  553.79, eval_num_episodes:   7, train_num_episodes: 272, eval_frame_rate: 1489, train_frame_rate:  696, train_exploration_epsilon: 0.010, normalized_return: 0.048, capped_normalized_return: 0.048, human_gap: 0.952
+I0519 14:06:28.669330 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 31.
+I0519 14:33:00.601304 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 31.
+I0519 14:42:44.884468 140163970426688 run_atari_cramer_staircase.py:967] iteration:  31, frame: 31000000, eval_episode_return:  255.88, train_episode_return:  510.68, eval_num_episodes:  17, train_num_episodes: 162, eval_frame_rate:  856, train_frame_rate:  628, train_exploration_epsilon: 0.010, normalized_return: 0.045, capped_normalized_return: 0.045, human_gap: 0.955
+I0519 14:42:45.324859 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 32.
+I0519 15:14:41.736844 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 32.
+I0519 15:20:15.765501 140163970426688 run_atari_cramer_staircase.py:967] iteration:  32, frame: 32000000, eval_episode_return:  776.52, train_episode_return:  632.68, eval_num_episodes:  89, train_num_episodes: 138, eval_frame_rate: 1497, train_frame_rate:  522, train_exploration_epsilon: 0.010, normalized_return: 0.167, capped_normalized_return: 0.167, human_gap: 0.833
+I0519 15:20:16.085700 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 33.
+I0519 15:44:22.255382 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 33.
+I0519 15:50:11.341763 140163970426688 run_atari_cramer_staircase.py:967] iteration:  33, frame: 33000000, eval_episode_return:  247.52, train_episode_return:  634.19, eval_num_episodes: 206, train_num_episodes: 229, eval_frame_rate: 1432, train_frame_rate:  691, train_exploration_epsilon: 0.010, normalized_return: 0.043, capped_normalized_return: 0.043, human_gap: 0.957
+I0519 15:50:11.659706 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 34.
+I0519 16:20:58.873797 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 34.
+I0519 16:28:24.546138 140163970426688 run_atari_cramer_staircase.py:967] iteration:  34, frame: 34000000, eval_episode_return:  407.76, train_episode_return:  669.71, eval_num_episodes: 156, train_num_episodes: 204, eval_frame_rate: 1122, train_frame_rate:  541, train_exploration_epsilon: 0.010, normalized_return: 0.080, capped_normalized_return: 0.080, human_gap: 0.920
+I0519 16:28:24.868525 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 35.
+I0519 17:02:01.901597 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 35.
+I0519 17:08:21.489210 140163970426688 run_atari_cramer_staircase.py:967] iteration:  35, frame: 35000000, eval_episode_return:  324.84, train_episode_return:  799.61, eval_num_episodes: 122, train_num_episodes: 281, eval_frame_rate: 1317, train_frame_rate:  496, train_exploration_epsilon: 0.010, normalized_return: 0.061, capped_normalized_return: 0.061, human_gap: 0.939
+I0519 17:08:21.815773 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 36.
+I0519 17:42:05.626976 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 36.
+I0519 17:49:47.202363 140163970426688 run_atari_cramer_staircase.py:967] iteration:  36, frame: 36000000, eval_episode_return:  1115.85, train_episode_return:  1070.28, eval_num_episodes: 130, train_num_episodes: 254, eval_frame_rate: 1083, train_frame_rate:  494, train_exploration_epsilon: 0.010, normalized_return: 0.246, capped_normalized_return: 0.246, human_gap: 0.754
+I0519 17:49:47.527730 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 37.
+I0519 18:23:28.232008 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 37.
+I0519 18:31:32.010466 140163970426688 run_atari_cramer_staircase.py:967] iteration:  37, frame: 37000000, eval_episode_return:  1842.50, train_episode_return:  1259.71, eval_num_episodes:  92, train_num_episodes: 245, eval_frame_rate: 1034, train_frame_rate:  495, train_exploration_epsilon: 0.010, normalized_return: 0.416, capped_normalized_return: 0.416, human_gap: 0.584
+I0519 18:31:32.334919 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 38.
+I0519 19:05:08.734608 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 38.
+I0519 19:13:18.388009 140163970426688 run_atari_cramer_staircase.py:967] iteration:  38, frame: 38000000, eval_episode_return:  1601.72, train_episode_return:  1567.74, eval_num_episodes: 128, train_num_episodes: 235, eval_frame_rate: 1021, train_frame_rate:  496, train_exploration_epsilon: 0.010, normalized_return: 0.360, capped_normalized_return: 0.360, human_gap: 0.640
+I0519 19:13:18.711488 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 39.
+I0519 19:47:09.885844 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 39.
+I0519 19:54:12.295770 140163970426688 run_atari_cramer_staircase.py:967] iteration:  39, frame: 39000000, eval_episode_return:  430.15, train_episode_return:  1470.91, eval_num_episodes: 198, train_num_episodes: 242, eval_frame_rate: 1184, train_frame_rate:  492, train_exploration_epsilon: 0.010, normalized_return: 0.085, capped_normalized_return: 0.085, human_gap: 0.915
+I0519 19:54:12.618582 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 40.
+I0519 20:28:10.334871 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 40.
+I0519 20:35:12.755987 140163970426688 run_atari_cramer_staircase.py:967] iteration:  40, frame: 40000000, eval_episode_return:  985.39, train_episode_return:  1346.46, eval_num_episodes: 115, train_num_episodes: 246, eval_frame_rate: 1184, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.216, capped_normalized_return: 0.216, human_gap: 0.784
+I0519 20:35:13.077981 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 41.
+I0519 21:08:33.404638 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 41.
+I0519 21:16:34.509157 140163970426688 run_atari_cramer_staircase.py:967] iteration:  41, frame: 41000000, eval_episode_return:  2172.34, train_episode_return:  1541.09, eval_num_episodes:  64, train_num_episodes: 211, eval_frame_rate: 1039, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 0.494, capped_normalized_return: 0.494, human_gap: 0.506
+I0519 21:16:34.831999 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 42.
+I0519 21:48:59.160965 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 42.
+I0519 21:56:53.222810 140163970426688 run_atari_cramer_staircase.py:967] iteration:  42, frame: 42000000, eval_episode_return:  1369.17, train_episode_return:  1738.13, eval_num_episodes: 121, train_num_episodes: 203, eval_frame_rate: 1055, train_frame_rate:  514, train_exploration_epsilon: 0.010, normalized_return: 0.305, capped_normalized_return: 0.305, human_gap: 0.695
+I0519 21:56:53.544567 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 43.
+I0519 22:28:39.397021 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 43.
+I0519 22:36:24.308270 140163970426688 run_atari_cramer_staircase.py:967] iteration:  43, frame: 43000000, eval_episode_return:  2460.66, train_episode_return:  1846.23, eval_num_episodes:  91, train_num_episodes: 191, eval_frame_rate: 1075, train_frame_rate:  525, train_exploration_epsilon: 0.010, normalized_return: 0.561, capped_normalized_return: 0.561, human_gap: 0.439
+I0519 22:36:24.629793 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 44.
+I0519 23:08:17.468475 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 44.
+I0519 23:16:01.833215 140163970426688 run_atari_cramer_staircase.py:967] iteration:  44, frame: 44000000, eval_episode_return:  1809.81, train_episode_return:  1874.79, eval_num_episodes: 107, train_num_episodes: 211, eval_frame_rate: 1077, train_frame_rate:  523, train_exploration_epsilon: 0.010, normalized_return: 0.409, capped_normalized_return: 0.409, human_gap: 0.591
+I0519 23:16:02.155327 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 45.
+I0519 23:48:05.434248 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 45.
+I0519 23:55:55.718983 140163970426688 run_atari_cramer_staircase.py:967] iteration:  45, frame: 45000000, eval_episode_return:  2814.60, train_episode_return:  2166.78, eval_num_episodes:  87, train_num_episodes: 202, eval_frame_rate: 1063, train_frame_rate:  520, train_exploration_epsilon: 0.010, normalized_return: 0.644, capped_normalized_return: 0.644, human_gap: 0.356
+I0519 23:55:56.045166 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 46.
+I0520 00:28:03.062470 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 46.
+I0520 00:35:52.124154 140163970426688 run_atari_cramer_staircase.py:967] iteration:  46, frame: 46000000, eval_episode_return:  2502.32, train_episode_return:  2358.14, eval_num_episodes:  99, train_num_episodes: 194, eval_frame_rate: 1066, train_frame_rate:  519, train_exploration_epsilon: 0.010, normalized_return: 0.571, capped_normalized_return: 0.571, human_gap: 0.429
+I0520 00:35:52.446365 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 47.
+I0520 01:07:55.282619 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 47.
+I0520 01:15:41.124919 140163970426688 run_atari_cramer_staircase.py:967] iteration:  47, frame: 47000000, eval_episode_return:  2823.33, train_episode_return:  2672.47, eval_num_episodes:  12, train_num_episodes: 186, eval_frame_rate: 1073, train_frame_rate:  520, train_exploration_epsilon: 0.010, normalized_return: 0.646, capped_normalized_return: 0.646, human_gap: 0.354
+I0520 01:15:41.448594 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 48.
+I0520 01:47:39.451327 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 48.
+I0520 01:55:24.014832 140163970426688 run_atari_cramer_staircase.py:967] iteration:  48, frame: 48000000, eval_episode_return:  2580.11, train_episode_return:  2833.78, eval_num_episodes:  91, train_num_episodes:  90, eval_frame_rate: 1076, train_frame_rate:  521, train_exploration_epsilon: 0.010, normalized_return: 0.589, capped_normalized_return: 0.589, human_gap: 0.411
+I0520 01:55:24.339254 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 49.
+I0520 02:27:34.484224 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 49.
+I0520 02:35:14.042428 140163970426688 run_atari_cramer_staircase.py:967] iteration:  49, frame: 49000000, eval_episode_return:  2452.89, train_episode_return:  2634.12, eval_num_episodes:  83, train_num_episodes: 160, eval_frame_rate: 1088, train_frame_rate:  518, train_exploration_epsilon: 0.010, normalized_return: 0.559, capped_normalized_return: 0.559, human_gap: 0.441
+I0520 02:35:14.363860 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 50.
+I0520 03:07:30.540006 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 50.
+I0520 03:14:57.329984 140163970426688 run_atari_cramer_staircase.py:967] iteration:  50, frame: 50000000, eval_episode_return:  2950.00, train_episode_return:  2626.81, eval_num_episodes:  86, train_num_episodes: 204, eval_frame_rate: 1119, train_frame_rate:  516, train_exploration_epsilon: 0.010, normalized_return: 0.676, capped_normalized_return: 0.676, human_gap: 0.324
+I0520 03:14:57.652079 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 51.
+I0520 03:47:24.787650 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 51.
+I0520 03:54:48.554064 140163970426688 run_atari_cramer_staircase.py:967] iteration:  51, frame: 51000000, eval_episode_return:  2450.65, train_episode_return:  2649.86, eval_num_episodes:  93, train_num_episodes: 138, eval_frame_rate: 1127, train_frame_rate:  514, train_exploration_epsilon: 0.010, normalized_return: 0.559, capped_normalized_return: 0.559, human_gap: 0.441
+I0520 03:54:48.875565 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 52.
+I0520 04:27:14.323603 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 52.
+I0520 04:34:14.506071 140163970426688 run_atari_cramer_staircase.py:967] iteration:  52, frame: 52000000, eval_episode_return:  1545.13, train_episode_return:  2898.02, eval_num_episodes: 119, train_num_episodes: 167, eval_frame_rate: 1190, train_frame_rate:  514, train_exploration_epsilon: 0.010, normalized_return: 0.347, capped_normalized_return: 0.347, human_gap: 0.653
+I0520 04:34:14.829469 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 53.
+I0520 05:07:11.204190 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 53.
+I0520 05:13:44.730387 140163970426688 run_atari_cramer_staircase.py:967] iteration:  53, frame: 53000000, eval_episode_return:  3073.69, train_episode_return:  2844.33, eval_num_episodes:  65, train_num_episodes: 187, eval_frame_rate: 1271, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.705, capped_normalized_return: 0.705, human_gap: 0.295
+I0520 05:13:45.055509 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 54.
+I0520 05:47:00.413504 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 54.
+I0520 05:53:44.786056 140163970426688 run_atari_cramer_staircase.py:967] iteration:  54, frame: 54000000, eval_episode_return:  2204.26, train_episode_return:  2707.10, eval_num_episodes: 101, train_num_episodes: 131, eval_frame_rate: 1236, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.501, capped_normalized_return: 0.501, human_gap: 0.499
+I0520 05:53:45.108815 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 55.
+I0520 06:26:34.178417 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 55.
+I0520 06:33:34.917852 140163970426688 run_atari_cramer_staircase.py:967] iteration:  55, frame: 55000000, eval_episode_return:  2204.40, train_episode_return:  2885.11, eval_num_episodes:  25, train_num_episodes:  88, eval_frame_rate: 1188, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.501, capped_normalized_return: 0.501, human_gap: 0.499
+I0520 06:33:35.240293 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 56.
+I0520 07:05:57.990195 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 56.
+I0520 07:13:04.687520 140163970426688 run_atari_cramer_staircase.py:967] iteration:  56, frame: 56000000, eval_episode_return:  2529.22, train_episode_return:  2926.89, eval_num_episodes:  90, train_num_episodes: 122, eval_frame_rate: 1172, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.577, capped_normalized_return: 0.577, human_gap: 0.423
+I0520 07:13:05.009756 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 57.
+I0520 07:45:10.631623 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 57.
+I0520 07:52:29.205884 140163970426688 run_atari_cramer_staircase.py:967] iteration:  57, frame: 57000000, eval_episode_return:  3154.75, train_episode_return:  2925.21, eval_num_episodes:  80, train_num_episodes: 140, eval_frame_rate: 1140, train_frame_rate:  519, train_exploration_epsilon: 0.010, normalized_return: 0.724, capped_normalized_return: 0.724, human_gap: 0.276
+I0520 07:52:29.528053 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 58.
+I0520 08:24:31.588117 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 58.
+I0520 08:32:10.729978 140163970426688 run_atari_cramer_staircase.py:967] iteration:  58, frame: 58000000, eval_episode_return:  3379.47, train_episode_return:  2920.62, eval_num_episodes:  38, train_num_episodes: 146, eval_frame_rate: 1089, train_frame_rate:  520, train_exploration_epsilon: 0.010, normalized_return: 0.776, capped_normalized_return: 0.776, human_gap: 0.224
+I0520 08:32:11.052222 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 59.
+I0520 09:04:22.292376 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 59.
+I0520 09:12:18.180183 140163970426688 run_atari_cramer_staircase.py:967] iteration:  59, frame: 59000000, eval_episode_return:  2794.24, train_episode_return:  3132.16, eval_num_episodes:  66, train_num_episodes: 148, eval_frame_rate: 1051, train_frame_rate:  518, train_exploration_epsilon: 0.010, normalized_return: 0.639, capped_normalized_return: 0.639, human_gap: 0.361
+I0520 09:12:18.505831 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 60.
+I0520 09:45:06.503760 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 60.
+I0520 09:53:05.290340 140163970426688 run_atari_cramer_staircase.py:967] iteration:  60, frame: 60000000, eval_episode_return:  3660.00, train_episode_return:  3016.54, eval_num_episodes:  74, train_num_episodes: 153, eval_frame_rate: 1044, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.842, capped_normalized_return: 0.842, human_gap: 0.158
+I0520 09:53:05.613768 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 61.
+I0520 10:26:17.506487 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 61.
+I0520 10:34:19.080460 140163970426688 run_atari_cramer_staircase.py:967] iteration:  61, frame: 61000000, eval_episode_return:  3083.52, train_episode_return:  3260.34, eval_num_episodes:  54, train_num_episodes: 146, eval_frame_rate: 1038, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 0.707, capped_normalized_return: 0.707, human_gap: 0.293
+I0520 10:34:19.404637 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 62.
+I0520 11:07:48.228438 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 62.
+I0520 11:14:55.495982 140163970426688 run_atari_cramer_staircase.py:967] iteration:  62, frame: 62000000, eval_episode_return:  3835.53, train_episode_return:  3335.97, eval_num_episodes:  76, train_num_episodes: 144, eval_frame_rate: 1170, train_frame_rate:  498, train_exploration_epsilon: 0.010, normalized_return: 0.883, capped_normalized_return: 0.883, human_gap: 0.117
+I0520 11:14:55.822932 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 63.
+I0520 11:48:51.535027 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 63.
+I0520 11:55:39.905441 140163970426688 run_atari_cramer_staircase.py:967] iteration:  63, frame: 63000000, eval_episode_return:  3612.33, train_episode_return:  3368.18, eval_num_episodes:  73, train_num_episodes: 165, eval_frame_rate: 1224, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.831, capped_normalized_return: 0.831, human_gap: 0.169
+I0520 11:55:40.228247 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 64.
+I0520 12:28:40.818214 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 64.
+I0520 12:36:27.579207 140163970426688 run_atari_cramer_staircase.py:967] iteration:  64, frame: 64000000, eval_episode_return:  3659.71, train_episode_return:  3532.91, eval_num_episodes:  70, train_num_episodes: 158, eval_frame_rate: 1071, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.842, capped_normalized_return: 0.842, human_gap: 0.158
+I0520 12:36:27.901441 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 65.
+I0520 13:08:55.496442 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 65.
+I0520 13:16:48.144695 140163970426688 run_atari_cramer_staircase.py:967] iteration:  65, frame: 65000000, eval_episode_return:  2733.10, train_episode_return:  3354.48, eval_num_episodes:  84, train_num_episodes: 145, eval_frame_rate: 1058, train_frame_rate:  513, train_exploration_epsilon: 0.010, normalized_return: 0.625, capped_normalized_return: 0.625, human_gap: 0.375
+I0520 13:16:48.467440 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 66.
+I0520 13:49:32.927480 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 66.
+I0520 13:57:31.393744 140163970426688 run_atari_cramer_staircase.py:967] iteration:  66, frame: 66000000, eval_episode_return:  2981.01, train_episode_return:  3439.81, eval_num_episodes:  89, train_num_episodes: 158, eval_frame_rate: 1045, train_frame_rate:  509, train_exploration_epsilon: 0.010, normalized_return: 0.683, capped_normalized_return: 0.683, human_gap: 0.317
+I0520 13:57:31.715879 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 67.
+I0520 14:30:06.238740 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 67.
+I0520 14:37:49.866692 140163970426688 run_atari_cramer_staircase.py:967] iteration:  67, frame: 67000000, eval_episode_return:  3656.56, train_episode_return:  3320.54, eval_num_episodes:  64, train_num_episodes: 148, eval_frame_rate: 1078, train_frame_rate:  512, train_exploration_epsilon: 0.010, normalized_return: 0.841, capped_normalized_return: 0.841, human_gap: 0.159
+I0520 14:37:50.188374 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 68.
+I0520 15:11:14.104661 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 68.
+I0520 15:19:04.737696 140163970426688 run_atari_cramer_staircase.py:967] iteration:  68, frame: 68000000, eval_episode_return:  3406.96, train_episode_return:  3280.94, eval_num_episodes:  69, train_num_episodes: 128, eval_frame_rate: 1062, train_frame_rate:  499, train_exploration_epsilon: 0.010, normalized_return: 0.783, capped_normalized_return: 0.783, human_gap: 0.217
+I0520 15:19:05.062232 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 69.
+I0520 15:51:17.061727 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 69.
+I0520 15:58:29.965040 140163970426688 run_atari_cramer_staircase.py:967] iteration:  69, frame: 69000000, eval_episode_return:  3767.50, train_episode_return:  3296.40, eval_num_episodes:  76, train_num_episodes: 161, eval_frame_rate: 1155, train_frame_rate:  518, train_exploration_epsilon: 0.010, normalized_return: 0.867, capped_normalized_return: 0.867, human_gap: 0.133
+I0520 15:58:30.289051 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 70.
+I0520 16:30:52.781224 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 70.
+I0520 16:38:00.460649 140163970426688 run_atari_cramer_staircase.py:967] iteration:  70, frame: 70000000, eval_episode_return:  3823.97, train_episode_return:  3260.88, eval_num_episodes:  73, train_num_episodes: 125, eval_frame_rate: 1169, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.880, capped_normalized_return: 0.880, human_gap: 0.120
+I0520 16:38:00.786313 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 71.
+I0520 17:11:00.374521 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 71.
+I0520 17:17:57.009070 140163970426688 run_atari_cramer_staircase.py:967] iteration:  71, frame: 71000000, eval_episode_return:  3165.60, train_episode_return:  3380.77, eval_num_episodes:  75, train_num_episodes: 155, eval_frame_rate: 1200, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.726, capped_normalized_return: 0.726, human_gap: 0.274
+I0520 17:17:57.332115 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 72.
+I0520 17:51:28.796057 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 72.
+I0520 17:58:20.166239 140163970426688 run_atari_cramer_staircase.py:967] iteration:  72, frame: 72000000, eval_episode_return:  3848.68, train_episode_return:  3408.19, eval_num_episodes:  53, train_num_episodes: 138, eval_frame_rate: 1215, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 0.886, capped_normalized_return: 0.886, human_gap: 0.114
+I0520 17:58:20.488979 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 73.
+I0520 18:31:36.511551 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 73.
+I0520 18:38:43.499681 140163970426688 run_atari_cramer_staircase.py:967] iteration:  73, frame: 73000000, eval_episode_return:  3742.50, train_episode_return:  3429.71, eval_num_episodes:  64, train_num_episodes: 136, eval_frame_rate: 1171, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.861, capped_normalized_return: 0.861, human_gap: 0.139
+I0520 18:38:43.823033 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 74.
+I0520 19:11:40.051955 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 74.
+I0520 19:18:37.780143 140163970426688 run_atari_cramer_staircase.py:967] iteration:  74, frame: 74000000, eval_episode_return:  3878.67, train_episode_return:  3421.29, eval_num_episodes:  60, train_num_episodes: 155, eval_frame_rate: 1197, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.893, capped_normalized_return: 0.893, human_gap: 0.107
+I0520 19:18:38.102854 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 75.
+I0520 19:51:04.655400 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 75.
+I0520 19:58:32.752932 140163970426688 run_atari_cramer_staircase.py:967] iteration:  75, frame: 75000000, eval_episode_return:  3900.92, train_episode_return:  3520.88, eval_num_episodes:  65, train_num_episodes: 147, eval_frame_rate: 1116, train_frame_rate:  514, train_exploration_epsilon: 0.010, normalized_return: 0.898, capped_normalized_return: 0.898, human_gap: 0.102
+I0520 19:58:33.075779 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 76.
+I0520 20:30:20.189527 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 76.
+I0520 20:38:03.338027 140163970426688 run_atari_cramer_staircase.py:967] iteration:  76, frame: 76000000, eval_episode_return:  3572.68, train_episode_return:  3495.50, eval_num_episodes:  71, train_num_episodes: 120, eval_frame_rate: 1080, train_frame_rate:  524, train_exploration_epsilon: 0.010, normalized_return: 0.822, capped_normalized_return: 0.822, human_gap: 0.178
+I0520 20:38:03.662297 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 77.
+I0520 21:09:54.525668 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 77.
+I0520 21:17:37.363384 140163970426688 run_atari_cramer_staircase.py:967] iteration:  77, frame: 77000000, eval_episode_return:  4030.47, train_episode_return:  3482.77, eval_num_episodes:  64, train_num_episodes: 119, eval_frame_rate: 1080, train_frame_rate:  523, train_exploration_epsilon: 0.010, normalized_return: 0.929, capped_normalized_return: 0.929, human_gap: 0.071
+I0520 21:17:37.685804 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 78.
+I0520 21:49:30.351564 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 78.
+I0520 21:57:15.364954 140163970426688 run_atari_cramer_staircase.py:967] iteration:  78, frame: 78000000, eval_episode_return:  3651.88, train_episode_return:  3527.62, eval_num_episodes:  64, train_num_episodes: 130, eval_frame_rate: 1075, train_frame_rate:  523, train_exploration_epsilon: 0.010, normalized_return: 0.840, capped_normalized_return: 0.840, human_gap: 0.160
+I0520 21:57:15.687158 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 79.
+I0520 22:29:02.997920 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 79.
+I0520 22:36:46.538441 140163970426688 run_atari_cramer_staircase.py:967] iteration:  79, frame: 79000000, eval_episode_return:  3578.48, train_episode_return:  3424.51, eval_num_episodes:  66, train_num_episodes: 122, eval_frame_rate: 1079, train_frame_rate:  524, train_exploration_epsilon: 0.010, normalized_return: 0.823, capped_normalized_return: 0.823, human_gap: 0.177
+I0520 22:36:46.861441 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 80.
+I0520 23:09:22.201467 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 80.
+I0520 23:17:17.192148 140163970426688 run_atari_cramer_staircase.py:967] iteration:  80, frame: 80000000, eval_episode_return:  3923.59, train_episode_return:  3439.21, eval_num_episodes:  64, train_num_episodes: 152, eval_frame_rate: 1053, train_frame_rate:  511, train_exploration_epsilon: 0.010, normalized_return: 0.904, capped_normalized_return: 0.904, human_gap: 0.096
+I0520 23:17:17.517258 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 81.
+I0520 23:50:18.021000 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 81.
+I0520 23:58:17.741326 140163970426688 run_atari_cramer_staircase.py:967] iteration:  81, frame: 81000000, eval_episode_return:  3869.71, train_episode_return:  3552.52, eval_num_episodes:  69, train_num_episodes: 151, eval_frame_rate: 1042, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.891, capped_normalized_return: 0.891, human_gap: 0.109
+I0520 23:58:18.064614 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 82.
+I0521 00:31:14.172315 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 82.
+I0521 00:38:25.199545 140163970426688 run_atari_cramer_staircase.py:967] iteration:  82, frame: 82000000, eval_episode_return:  3651.22, train_episode_return:  3583.72, eval_num_episodes:  41, train_num_episodes: 137, eval_frame_rate: 1160, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.840, capped_normalized_return: 0.840, human_gap: 0.160
+I0521 00:38:25.522317 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 83.
+I0521 01:12:19.057894 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 83.
+I0521 01:18:54.347728 140163970426688 run_atari_cramer_staircase.py:967] iteration:  83, frame: 83000000, eval_episode_return:  3371.92, train_episode_return:  3657.59, eval_num_episodes:  78, train_num_episodes: 133, eval_frame_rate: 1265, train_frame_rate:  492, train_exploration_epsilon: 0.010, normalized_return: 0.774, capped_normalized_return: 0.774, human_gap: 0.226
+I0521 01:18:54.672824 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 84.
+I0521 01:52:24.795202 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 84.
+I0521 02:00:02.251974 140163970426688 run_atari_cramer_staircase.py:967] iteration:  84, frame: 84000000, eval_episode_return:  3755.30, train_episode_return:  3518.24, eval_num_episodes:  66, train_num_episodes: 136, eval_frame_rate: 1093, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 0.864, capped_normalized_return: 0.864, human_gap: 0.136
+I0521 02:00:02.575646 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 85.
+I0521 02:32:37.610861 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 85.
+I0521 02:40:28.674853 140163970426688 run_atari_cramer_staircase.py:967] iteration:  85, frame: 85000000, eval_episode_return:  3737.38, train_episode_return:  3535.00, eval_num_episodes:  65, train_num_episodes: 136, eval_frame_rate: 1061, train_frame_rate:  511, train_exploration_epsilon: 0.010, normalized_return: 0.860, capped_normalized_return: 0.860, human_gap: 0.140
+I0521 02:40:28.998077 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 86.
+I0521 03:12:54.876313 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 86.
+I0521 03:20:44.126212 140163970426688 run_atari_cramer_staircase.py:967] iteration:  86, frame: 86000000, eval_episode_return:  2805.49, train_episode_return:  3385.73, eval_num_episodes:  91, train_num_episodes: 143, eval_frame_rate: 1066, train_frame_rate:  514, train_exploration_epsilon: 0.010, normalized_return: 0.642, capped_normalized_return: 0.642, human_gap: 0.358
+I0521 03:20:44.450158 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 87.
+I0521 03:53:15.012709 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 87.
+I0521 04:01:02.027126 140163970426688 run_atari_cramer_staircase.py:967] iteration:  87, frame: 87000000, eval_episode_return:  3816.38, train_episode_return:  3490.88, eval_num_episodes:  69, train_num_episodes: 137, eval_frame_rate: 1071, train_frame_rate:  513, train_exploration_epsilon: 0.010, normalized_return: 0.879, capped_normalized_return: 0.879, human_gap: 0.121
+I0521 04:01:02.349439 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 88.
+I0521 04:33:36.928014 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 88.
+I0521 04:41:22.565215 140163970426688 run_atari_cramer_staircase.py:967] iteration:  88, frame: 88000000, eval_episode_return:  3900.91, train_episode_return:  3603.04, eval_num_episodes:  77, train_num_episodes: 135, eval_frame_rate: 1074, train_frame_rate:  512, train_exploration_epsilon: 0.010, normalized_return: 0.898, capped_normalized_return: 0.898, human_gap: 0.102
+I0521 04:41:22.887492 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 89.
+I0521 05:13:30.811496 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 89.
+I0521 05:20:58.387942 140163970426688 run_atari_cramer_staircase.py:967] iteration:  89, frame: 89000000, eval_episode_return:  3588.70, train_episode_return:  3467.14, eval_num_episodes:  69, train_num_episodes: 133, eval_frame_rate: 1117, train_frame_rate:  519, train_exploration_epsilon: 0.010, normalized_return: 0.825, capped_normalized_return: 0.825, human_gap: 0.175
+I0521 05:20:58.710268 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 90.
+I0521 05:53:39.688688 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 90.
+I0521 06:00:53.793886 140163970426688 run_atari_cramer_staircase.py:967] iteration:  90, frame: 90000000, eval_episode_return:  3720.58, train_episode_return:  3584.10, eval_num_episodes:  69, train_num_episodes: 134, eval_frame_rate: 1152, train_frame_rate:  510, train_exploration_epsilon: 0.010, normalized_return: 0.856, capped_normalized_return: 0.856, human_gap: 0.144
+I0521 06:00:54.115368 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 91.
+I0521 06:33:47.308446 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 91.
+I0521 06:40:49.572991 140163970426688 run_atari_cramer_staircase.py:967] iteration:  91, frame: 91000000, eval_episode_return:  3871.90, train_episode_return:  3652.13, eval_num_episodes:  63, train_num_episodes: 150, eval_frame_rate: 1184, train_frame_rate:  507, train_exploration_epsilon: 0.010, normalized_return: 0.892, capped_normalized_return: 0.892, human_gap: 0.108
+I0521 06:40:49.895133 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 92.
+I0521 07:14:04.641961 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 92.
+I0521 07:20:45.161154 140163970426688 run_atari_cramer_staircase.py:967] iteration:  92, frame: 92000000, eval_episode_return:  3655.33, train_episode_return:  3615.31, eval_num_episodes:  45, train_num_episodes: 147, eval_frame_rate: 1248, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.841, capped_normalized_return: 0.841, human_gap: 0.159
+I0521 07:20:45.484004 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 93.
+I0521 07:54:14.881484 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 93.
+I0521 08:01:08.185784 140163970426688 run_atari_cramer_staircase.py:967] iteration:  93, frame: 93000000, eval_episode_return:  2770.97, train_episode_return:  3592.27, eval_num_episodes:  72, train_num_episodes: 132, eval_frame_rate: 1210, train_frame_rate:  498, train_exploration_epsilon: 0.010, normalized_return: 0.634, capped_normalized_return: 0.634, human_gap: 0.366
+I0521 08:01:08.511439 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 94.
+I0521 08:34:25.001357 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 94.
+I0521 08:41:41.278093 140163970426688 run_atari_cramer_staircase.py:967] iteration:  94, frame: 94000000, eval_episode_return:  3797.65, train_episode_return:  3600.07, eval_num_episodes:  68, train_num_episodes: 134, eval_frame_rate: 1146, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.874, capped_normalized_return: 0.874, human_gap: 0.126
+I0521 08:41:41.600656 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 95.
+I0521 09:14:31.647203 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 95.
+I0521 09:21:58.017239 140163970426688 run_atari_cramer_staircase.py:967] iteration:  95, frame: 95000000, eval_episode_return:  3780.91, train_episode_return:  3683.84, eval_num_episodes:  44, train_num_episodes:  86, eval_frame_rate: 1120, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.870, capped_normalized_return: 0.870, human_gap: 0.130
+I0521 09:21:58.341071 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 96.
+I0521 09:54:36.150159 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 96.
+I0521 10:02:11.729110 140163970426688 run_atari_cramer_staircase.py:967] iteration:  96, frame: 96000000, eval_episode_return:  3158.26, train_episode_return:  3613.18, eval_num_episodes:  46, train_num_episodes:  88, eval_frame_rate: 1098, train_frame_rate:  511, train_exploration_epsilon: 0.010, normalized_return: 0.724, capped_normalized_return: 0.724, human_gap: 0.276
+I0521 10:02:12.049811 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 97.
+I0521 10:34:24.749881 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 97.
+I0521 10:42:07.824457 140163970426688 run_atari_cramer_staircase.py:967] iteration:  97, frame: 97000000, eval_episode_return:  3743.85, train_episode_return:  3409.84, eval_num_episodes:  13, train_num_episodes: 125, eval_frame_rate: 1080, train_frame_rate:  517, train_exploration_epsilon: 0.010, normalized_return: 0.862, capped_normalized_return: 0.862, human_gap: 0.138
+I0521 10:42:08.145987 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 98.
+I0521 11:14:11.755209 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 98.
+I0521 11:21:57.202699 140163970426688 run_atari_cramer_staircase.py:967] iteration:  98, frame: 98000000, eval_episode_return:  3666.57, train_episode_return:  3594.80, eval_num_episodes:  70, train_num_episodes: 148, eval_frame_rate: 1074, train_frame_rate:  520, train_exploration_epsilon: 0.010, normalized_return: 0.844, capped_normalized_return: 0.844, human_gap: 0.156
+I0521 11:21:57.523309 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 99.
+I0521 11:54:13.459037 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 99.
+I0521 12:02:01.635706 140163970426688 run_atari_cramer_staircase.py:967] iteration:  99, frame: 99000000, eval_episode_return:  4060.77, train_episode_return:  3630.45, eval_num_episodes:  65, train_num_episodes: 134, eval_frame_rate: 1068, train_frame_rate:  517, train_exploration_epsilon: 0.010, normalized_return: 0.936, capped_normalized_return: 0.936, human_gap: 0.064
+I0521 12:02:01.959575 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 100.
+I0521 12:34:41.696287 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 100.
+I0521 12:42:41.216638 140163970426688 run_atari_cramer_staircase.py:967] iteration: 100, frame: 100000000, eval_episode_return:  3272.50, train_episode_return:  3705.18, eval_num_episodes:   8, train_num_episodes: 112, eval_frame_rate: 1043, train_frame_rate:  510, train_exploration_epsilon: 0.010, normalized_return: 0.751, capped_normalized_return: 0.751, human_gap: 0.249
+I0521 12:42:41.541196 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 101.
+I0521 13:15:12.600023 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 101.
+I0521 13:23:03.493516 140163970426688 run_atari_cramer_staircase.py:967] iteration: 101, frame: 101000000, eval_episode_return:  3798.46, train_episode_return:  3683.59, eval_num_episodes:  39, train_num_episodes: 103, eval_frame_rate: 1062, train_frame_rate:  513, train_exploration_epsilon: 0.010, normalized_return: 0.874, capped_normalized_return: 0.874, human_gap: 0.126
+I0521 13:23:03.815422 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 102.
+I0521 13:55:05.682585 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 102.
+I0521 14:02:51.469131 140163970426688 run_atari_cramer_staircase.py:967] iteration: 102, frame: 102000000, eval_episode_return:  3784.62, train_episode_return:  3564.38, eval_num_episodes:  52, train_num_episodes: 121, eval_frame_rate: 1073, train_frame_rate:  520, train_exploration_epsilon: 0.010, normalized_return: 0.871, capped_normalized_return: 0.871, human_gap: 0.129
+I0521 14:02:51.790163 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 103.
+I0521 14:35:06.945313 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 103.
+I0521 14:42:39.215113 140163970426688 run_atari_cramer_staircase.py:967] iteration: 103, frame: 103000000, eval_episode_return:  2816.88, train_episode_return:  3700.91, eval_num_episodes:  16, train_num_episodes: 121, eval_frame_rate: 1106, train_frame_rate:  517, train_exploration_epsilon: 0.010, normalized_return: 0.644, capped_normalized_return: 0.644, human_gap: 0.356
+I0521 14:42:39.535790 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 104.
+I0521 15:15:32.394477 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 104.
+I0521 15:22:33.022346 140163970426688 run_atari_cramer_staircase.py:967] iteration: 104, frame: 104000000, eval_episode_return:  3585.42, train_episode_return:  3615.96, eval_num_episodes:  48, train_num_episodes: 146, eval_frame_rate: 1189, train_frame_rate:  507, train_exploration_epsilon: 0.010, normalized_return: 0.825, capped_normalized_return: 0.825, human_gap: 0.175
+I0521 15:22:33.344236 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 105.
+I0521 15:56:48.043803 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 105.
+I0521 16:03:52.783974 140163970426688 run_atari_cramer_staircase.py:967] iteration: 105, frame: 105000000, eval_episode_return:  3960.63, train_episode_return:  3647.22, eval_num_episodes:  63, train_num_episodes: 133, eval_frame_rate: 1177, train_frame_rate:  487, train_exploration_epsilon: 0.010, normalized_return: 0.912, capped_normalized_return: 0.912, human_gap: 0.088
+I0521 16:03:53.107968 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 106.
+I0521 16:37:39.524327 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 106.
+I0521 16:45:20.108318 140163970426688 run_atari_cramer_staircase.py:967] iteration: 106, frame: 106000000, eval_episode_return:  3933.00, train_episode_return:  3522.27, eval_num_episodes:  50, train_num_episodes: 154, eval_frame_rate: 1086, train_frame_rate:  493, train_exploration_epsilon: 0.010, normalized_return: 0.906, capped_normalized_return: 0.906, human_gap: 0.094
+I0521 16:45:20.429571 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 107.
+I0521 17:18:10.258552 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 107.
+I0521 17:26:11.205106 140163970426688 run_atari_cramer_staircase.py:967] iteration: 107, frame: 107000000, eval_episode_return:  3447.85, train_episode_return:  3563.42, eval_num_episodes:  79, train_num_episodes: 149, eval_frame_rate: 1040, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.792, capped_normalized_return: 0.792, human_gap: 0.208
+I0521 17:26:11.529179 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 108.
+I0521 17:59:20.360879 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 108.
+I0521 18:07:20.049759 140163970426688 run_atari_cramer_staircase.py:967] iteration: 108, frame: 108000000, eval_episode_return:  3823.38, train_episode_return:  3639.83, eval_num_episodes:  71, train_num_episodes: 120, eval_frame_rate: 1042, train_frame_rate:  503, train_exploration_epsilon: 0.010, normalized_return: 0.880, capped_normalized_return: 0.880, human_gap: 0.120
+I0521 18:07:20.373000 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 109.
+I0521 18:40:21.403355 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 109.
+I0521 18:48:16.888561 140163970426688 run_atari_cramer_staircase.py:967] iteration: 109, frame: 109000000, eval_episode_return:  3839.42, train_episode_return:  3709.83, eval_num_episodes:  52, train_num_episodes: 118, eval_frame_rate: 1052, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.884, capped_normalized_return: 0.884, human_gap: 0.116
+I0521 18:48:17.213496 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 110.
+I0521 19:20:40.841203 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 110.
+I0521 19:28:29.578480 140163970426688 run_atari_cramer_staircase.py:967] iteration: 110, frame: 110000000, eval_episode_return:  3568.40, train_episode_return:  3380.37, eval_num_episodes:  50, train_num_episodes: 108, eval_frame_rate: 1067, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.821, capped_normalized_return: 0.821, human_gap: 0.179
+I0521 19:28:29.899760 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 111.
+I0521 20:00:50.001298 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 111.
+I0521 20:08:38.708012 140163970426688 run_atari_cramer_staircase.py:967] iteration: 111, frame: 111000000, eval_episode_return:  3728.96, train_episode_return:  3514.35, eval_num_episodes:  67, train_num_episodes: 138, eval_frame_rate: 1067, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.858, capped_normalized_return: 0.858, human_gap: 0.142
+I0521 20:08:39.033459 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 112.
+I0521 20:40:58.316218 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 112.
+I0521 20:48:47.871770 140163970426688 run_atari_cramer_staircase.py:967] iteration: 112, frame: 112000000, eval_episode_return:  4170.45, train_episode_return:  3604.87, eval_num_episodes:  66, train_num_episodes: 119, eval_frame_rate: 1065, train_frame_rate:  516, train_exploration_epsilon: 0.010, normalized_return: 0.962, capped_normalized_return: 0.962, human_gap: 0.038
+I0521 20:48:48.193338 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 113.
+I0521 21:21:10.816770 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 113.
+I0521 21:28:50.711235 140163970426688 run_atari_cramer_staircase.py:967] iteration: 113, frame: 113000000, eval_episode_return:  4070.82, train_episode_return:  3615.77, eval_num_episodes:  49, train_num_episodes: 104, eval_frame_rate: 1087, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.938, capped_normalized_return: 0.938, human_gap: 0.062
+I0521 21:28:51.032357 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 114.
+I0521 22:01:41.083389 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 114.
+I0521 22:08:58.999326 140163970426688 run_atari_cramer_staircase.py:967] iteration: 114, frame: 114000000, eval_episode_return:  3801.76, train_episode_return:  3664.25, eval_num_episodes:  68, train_num_episodes: 134, eval_frame_rate: 1142, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.875, capped_normalized_return: 0.875, human_gap: 0.125
+I0521 22:08:59.321198 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 115.
+I0521 22:42:40.549592 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 115.
+I0521 22:49:39.350733 140163970426688 run_atari_cramer_staircase.py:967] iteration: 115, frame: 115000000, eval_episode_return:  3801.77, train_episode_return:  3555.23, eval_num_episodes:  62, train_num_episodes: 153, eval_frame_rate: 1194, train_frame_rate:  495, train_exploration_epsilon: 0.010, normalized_return: 0.875, capped_normalized_return: 0.875, human_gap: 0.125
+I0521 22:49:39.672477 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 116.
+I0521 23:23:39.159577 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 116.
+I0521 23:30:40.706410 140163970426688 run_atari_cramer_staircase.py:967] iteration: 116, frame: 116000000, eval_episode_return:  3477.29, train_episode_return:  3441.72, eval_num_episodes:  70, train_num_episodes:  93, eval_frame_rate: 1186, train_frame_rate:  490, train_exploration_epsilon: 0.010, normalized_return: 0.799, capped_normalized_return: 0.799, human_gap: 0.201
+I0521 23:30:41.032651 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 117.
+I0522 00:04:02.560128 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 117.
+I0522 00:11:43.620792 140163970426688 run_atari_cramer_staircase.py:967] iteration: 117, frame: 117000000, eval_episode_return:  4477.30, train_episode_return:  3468.27, eval_num_episodes:  37, train_num_episodes: 127, eval_frame_rate: 1084, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 1.033, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 00:11:43.943575 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 118.
+I0522 00:44:40.479014 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 118.
+I0522 00:52:39.802639 140163970426688 run_atari_cramer_staircase.py:967] iteration: 118, frame: 118000000, eval_episode_return:  3470.91, train_episode_return:  3495.56, eval_num_episodes:  11, train_num_episodes: 126, eval_frame_rate: 1043, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.798, capped_normalized_return: 0.798, human_gap: 0.202
+I0522 00:52:40.125881 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 119.
+I0522 01:25:54.741398 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 119.
+I0522 01:33:56.026150 140163970426688 run_atari_cramer_staircase.py:967] iteration: 119, frame: 119000000, eval_episode_return:  3827.35, train_episode_return:  3580.78, eval_num_episodes:  68, train_num_episodes: 141, eval_frame_rate: 1039, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.881, capped_normalized_return: 0.881, human_gap: 0.119
+I0522 01:33:56.350145 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 120.
+I0522 02:07:43.058007 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 120.
+I0522 02:16:24.856149 140163970426688 run_atari_cramer_staircase.py:967] iteration: 120, frame: 120000000, eval_episode_return:  3688.62, train_episode_return:  3629.28, eval_num_episodes:  58, train_num_episodes: 138, eval_frame_rate:  958, train_frame_rate:  493, train_exploration_epsilon: 0.010, normalized_return: 0.849, capped_normalized_return: 0.849, human_gap: 0.151
+I0522 02:16:25.178514 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 121.
+I0522 02:50:33.766005 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 121.
+I0522 02:57:12.481410 140163970426688 run_atari_cramer_staircase.py:967] iteration: 121, frame: 121000000, eval_episode_return:  3799.09, train_episode_return:  3668.86, eval_num_episodes:  66, train_num_episodes: 123, eval_frame_rate: 1254, train_frame_rate:  488, train_exploration_epsilon: 0.010, normalized_return: 0.875, capped_normalized_return: 0.875, human_gap: 0.125
+I0522 02:57:12.803349 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 122.
+I0522 03:31:07.495997 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 122.
+I0522 03:38:16.489019 140163970426688 run_atari_cramer_staircase.py:967] iteration: 122, frame: 122000000, eval_episode_return:  4007.46, train_episode_return:  3818.39, eval_num_episodes:  67, train_num_episodes: 118, eval_frame_rate: 1166, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.923, capped_normalized_return: 0.923, human_gap: 0.077
+I0522 03:38:16.812690 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 123.
+I0522 04:11:33.974690 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 123.
+I0522 04:19:26.840633 140163970426688 run_atari_cramer_staircase.py:967] iteration: 123, frame: 123000000, eval_episode_return:  3970.30, train_episode_return:  3534.34, eval_num_episodes:  66, train_num_episodes: 143, eval_frame_rate: 1057, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.915, capped_normalized_return: 0.915, human_gap: 0.085
+I0522 04:19:27.162031 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 124.
+I0522 04:52:17.712605 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 124.
+I0522 05:00:07.525752 140163970426688 run_atari_cramer_staircase.py:967] iteration: 124, frame: 124000000, eval_episode_return:  4585.00, train_episode_return:  3833.79, eval_num_episodes:  52, train_num_episodes: 116, eval_frame_rate: 1064, train_frame_rate:  507, train_exploration_epsilon: 0.010, normalized_return: 1.059, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 05:00:07.847556 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 125.
+I0522 05:33:18.996696 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 125.
+I0522 05:41:12.169228 140163970426688 run_atari_cramer_staircase.py:967] iteration: 125, frame: 125000000, eval_episode_return:  3148.52, train_episode_return:  3651.58, eval_num_episodes:  88, train_num_episodes: 139, eval_frame_rate: 1057, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 0.722, capped_normalized_return: 0.722, human_gap: 0.278
+I0522 05:41:12.490972 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 126.
+I0522 06:14:03.673206 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 126.
+I0522 06:20:50.314732 140163970426688 run_atari_cramer_staircase.py:967] iteration: 126, frame: 126000000, eval_episode_return:  4272.59, train_episode_return:  3842.76, eval_num_episodes:  54, train_num_episodes: 116, eval_frame_rate: 1230, train_frame_rate:  507, train_exploration_epsilon: 0.010, normalized_return: 0.985, capped_normalized_return: 0.985, human_gap: 0.015
+I0522 06:20:50.638054 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 127.
+I0522 06:54:32.136075 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 127.
+I0522 07:01:13.611917 140163970426688 run_atari_cramer_staircase.py:967] iteration: 127, frame: 127000000, eval_episode_return:  4254.63, train_episode_return:  3801.83, eval_num_episodes:  54, train_num_episodes: 142, eval_frame_rate: 1245, train_frame_rate:  495, train_exploration_epsilon: 0.010, normalized_return: 0.981, capped_normalized_return: 0.981, human_gap: 0.019
+I0522 07:01:13.935472 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 128.
+I0522 07:34:27.982167 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 128.
+I0522 07:42:21.835663 140163970426688 run_atari_cramer_staircase.py:967] iteration: 128, frame: 128000000, eval_episode_return:  4608.75, train_episode_return:  3786.64, eval_num_episodes:  64, train_num_episodes: 140, eval_frame_rate: 1055, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 1.064, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 07:42:22.161180 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 129.
+I0522 08:15:41.766978 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 129.
+I0522 08:23:36.983898 140163970426688 run_atari_cramer_staircase.py:967] iteration: 129, frame: 129000000, eval_episode_return:  4730.31, train_episode_return:  3876.50, eval_num_episodes:  64, train_num_episodes: 137, eval_frame_rate: 1052, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 1.093, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 08:23:37.306670 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 130.
+I0522 08:56:50.826008 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 130.
+I0522 09:04:51.998228 140163970426688 run_atari_cramer_staircase.py:967] iteration: 130, frame: 130000000, eval_episode_return:  4436.18, train_episode_return:  4153.51, eval_num_episodes:  34, train_num_episodes: 134, eval_frame_rate: 1039, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 1.024, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 09:04:52.323865 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 131.
+I0522 09:37:53.417814 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 131.
+I0522 09:45:20.542449 140163970426688 run_atari_cramer_staircase.py:967] iteration: 131, frame: 131000000, eval_episode_return:  4296.76, train_episode_return:  4058.00, eval_num_episodes:  71, train_num_episodes: 110, eval_frame_rate: 1118, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.991, capped_normalized_return: 0.991, human_gap: 0.009
+I0522 09:45:20.870052 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 132.
+I0522 10:18:21.570184 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 132.
+I0522 10:24:56.156165 140163970426688 run_atari_cramer_staircase.py:967] iteration: 132, frame: 132000000, eval_episode_return:  4433.23, train_episode_return:  3939.43, eval_num_episodes:  65, train_num_episodes: 105, eval_frame_rate: 1267, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 1.023, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 10:24:56.481098 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 133.
+I0522 10:58:19.279368 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 133.
+I0522 11:04:51.750361 140163970426688 run_atari_cramer_staircase.py:967] iteration: 133, frame: 133000000, eval_episode_return:  3995.19, train_episode_return:  3887.54, eval_num_episodes:  52, train_num_episodes: 134, eval_frame_rate: 1274, train_frame_rate:  499, train_exploration_epsilon: 0.010, normalized_return: 0.920, capped_normalized_return: 0.920, human_gap: 0.080
+I0522 11:04:52.072980 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 134.
+I0522 11:38:03.632930 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 134.
+I0522 11:45:25.675470 140163970426688 run_atari_cramer_staircase.py:967] iteration: 134, frame: 134000000, eval_episode_return:  4542.24, train_episode_return:  4106.62, eval_num_episodes:  67, train_num_episodes: 130, eval_frame_rate: 1131, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 1.049, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 11:45:25.998504 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 135.
+I0522 12:18:20.227230 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 135.
+I0522 12:26:15.884150 140163970426688 run_atari_cramer_staircase.py:967] iteration: 135, frame: 135000000, eval_episode_return:  4239.47, train_episode_return:  3853.81, eval_num_episodes:  76, train_num_episodes: 105, eval_frame_rate: 1051, train_frame_rate:  507, train_exploration_epsilon: 0.010, normalized_return: 0.978, capped_normalized_return: 0.978, human_gap: 0.022
+I0522 12:26:16.206732 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 136.
+I0522 12:59:47.036026 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 136.
+I0522 13:07:49.600105 140163970426688 run_atari_cramer_staircase.py:967] iteration: 136, frame: 136000000, eval_episode_return:  4094.44, train_episode_return:  3949.93, eval_num_episodes:   9, train_num_episodes: 153, eval_frame_rate: 1036, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 0.944, capped_normalized_return: 0.944, human_gap: 0.056
+I0522 13:07:49.923899 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 137.
+I0522 13:41:45.789949 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 137.
+I0522 13:49:18.752040 140163970426688 run_atari_cramer_staircase.py:967] iteration: 137, frame: 137000000, eval_episode_return:  3817.60, train_episode_return:  3899.57, eval_num_episodes:  25, train_num_episodes: 141, eval_frame_rate: 1104, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.879, capped_normalized_return: 0.879, human_gap: 0.121
+I0522 13:49:19.076947 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 138.
+I0522 14:23:27.982455 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 138.
+I0522 14:30:05.644759 140163970426688 run_atari_cramer_staircase.py:967] iteration: 138, frame: 138000000, eval_episode_return:  3742.13, train_episode_return:  3875.83, eval_num_episodes:  75, train_num_episodes: 151, eval_frame_rate: 1257, train_frame_rate:  488, train_exploration_epsilon: 0.010, normalized_return: 0.861, capped_normalized_return: 0.861, human_gap: 0.139
+I0522 14:30:05.970373 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 139.
+I0522 15:04:24.788164 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 139.
+I0522 15:12:37.328865 140163970426688 run_atari_cramer_staircase.py:967] iteration: 139, frame: 139000000, eval_episode_return:  4670.00, train_episode_return:  4038.32, eval_num_episodes:  64, train_num_episodes: 137, eval_frame_rate: 1015, train_frame_rate:  486, train_exploration_epsilon: 0.010, normalized_return: 1.079, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 15:12:37.654030 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 140.
+I0522 15:46:49.561249 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 140.
+I0522 15:54:52.395220 140163970426688 run_atari_cramer_staircase.py:967] iteration: 140, frame: 140000000, eval_episode_return:  4722.00, train_episode_return:  4241.50, eval_num_episodes:  15, train_num_episodes: 133, eval_frame_rate: 1036, train_frame_rate:  487, train_exploration_epsilon: 0.010, normalized_return: 1.091, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 15:54:52.718811 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 141.
+I0522 16:28:33.354763 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 141.
+I0522 16:36:20.365067 140163970426688 run_atari_cramer_staircase.py:967] iteration: 141, frame: 141000000, eval_episode_return:  4742.69, train_episode_return:  4115.83, eval_num_episodes:  67, train_num_episodes: 115, eval_frame_rate: 1071, train_frame_rate:  495, train_exploration_epsilon: 0.010, normalized_return: 1.096, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 16:36:20.688188 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 142.
+I0522 17:09:56.690330 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 142.
+I0522 17:16:30.096757 140163970426688 run_atari_cramer_staircase.py:967] iteration: 142, frame: 142000000, eval_episode_return:  5214.70, train_episode_return:  4062.48, eval_num_episodes:  66, train_num_episodes: 133, eval_frame_rate: 1271, train_frame_rate:  496, train_exploration_epsilon: 0.010, normalized_return: 1.206, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 17:16:30.420110 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 143.
+I0522 17:50:34.931381 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 143.
+I0522 17:57:52.385820 140163970426688 run_atari_cramer_staircase.py:967] iteration: 143, frame: 143000000, eval_episode_return:  3077.50, train_episode_return:  4261.13, eval_num_episodes:  48, train_num_episodes: 133, eval_frame_rate: 1143, train_frame_rate:  489, train_exploration_epsilon: 0.010, normalized_return: 0.706, capped_normalized_return: 0.706, human_gap: 0.294
+I0522 17:57:52.709176 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 144.
+I0522 18:30:40.522478 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 144.
+I0522 18:38:32.221065 140163970426688 run_atari_cramer_staircase.py:967] iteration: 144, frame: 144000000, eval_episode_return:  5074.44, train_episode_return:  4362.82, eval_num_episodes:   9, train_num_episodes: 103, eval_frame_rate: 1060, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 1.173, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 18:38:32.546466 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 145.
+I0522 19:11:34.391494 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 145.
+I0522 19:19:18.128669 140163970426688 run_atari_cramer_staircase.py:967] iteration: 145, frame: 145000000, eval_episode_return:  4481.49, train_episode_return:  4005.78, eval_num_episodes:  74, train_num_episodes: 109, eval_frame_rate: 1078, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 1.034, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 19:19:18.453824 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 146.
+I0522 19:52:07.633357 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 146.
+I0522 20:00:00.558033 140163970426688 run_atari_cramer_staircase.py:967] iteration: 146, frame: 146000000, eval_episode_return:  4373.70, train_episode_return:  3926.70, eval_num_episodes:  54, train_num_episodes: 112, eval_frame_rate: 1057, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 1.009, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 20:00:00.882160 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 147.
+I0522 20:32:22.796784 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 147.
+I0522 20:39:43.734978 140163970426688 run_atari_cramer_staircase.py:967] iteration: 147, frame: 147000000, eval_episode_return:  4994.00, train_episode_return:  3869.28, eval_num_episodes:  55, train_num_episodes: 111, eval_frame_rate: 1134, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 1.154, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 20:39:44.059076 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 148.
+I0522 21:13:20.346073 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 148.
+I0522 21:19:41.344712 140163970426688 run_atari_cramer_staircase.py:967] iteration: 148, frame: 148000000, eval_episode_return:  4408.38, train_episode_return:  4020.00, eval_num_episodes:  74, train_num_episodes: 155, eval_frame_rate: 1312, train_frame_rate:  496, train_exploration_epsilon: 0.010, normalized_return: 1.017, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 21:19:41.667241 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 149.
+I0522 21:53:33.441739 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 149.
+I0522 22:01:00.739235 140163970426688 run_atari_cramer_staircase.py:967] iteration: 149, frame: 149000000, eval_episode_return:  5167.12, train_episode_return:  4500.09, eval_num_episodes:  66, train_num_episodes: 114, eval_frame_rate: 1118, train_frame_rate:  492, train_exploration_epsilon: 0.010, normalized_return: 1.195, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 22:01:01.064044 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 150.
+I0522 22:34:17.259637 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 150.
+I0522 22:42:11.794738 140163970426688 run_atari_cramer_staircase.py:967] iteration: 150, frame: 150000000, eval_episode_return:  4623.85, train_episode_return:  4454.51, eval_num_episodes:  13, train_num_episodes:  82, eval_frame_rate: 1054, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 1.068, capped_normalized_return: 1.000, human_gap: 0.000
+I0522 22:42:12.117486 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 151.
+I0522 23:15:10.172497 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 151.
+I0522 23:23:04.758353 140163970426688 run_atari_cramer_staircase.py:967] iteration: 151, frame: 151000000, eval_episode_return:  4048.17, train_episode_return:  4371.79, eval_num_episodes:  60, train_num_episodes:  95, eval_frame_rate: 1054, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.933, capped_normalized_return: 0.933, human_gap: 0.067
+I0522 23:23:05.082948 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 152.
+I0522 23:56:00.049182 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 152.
+I0523 00:03:40.867652 140163970426688 run_atari_cramer_staircase.py:967] iteration: 152, frame: 152000000, eval_episode_return:  4292.96, train_episode_return:  4320.86, eval_num_episodes:  27, train_num_episodes:  58, eval_frame_rate: 1085, train_frame_rate:  506, train_exploration_epsilon: 0.010, normalized_return: 0.990, capped_normalized_return: 0.990, human_gap: 0.010
+I0523 00:03:41.191287 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 153.
+I0523 00:36:04.710891 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 153.
+I0523 00:43:11.252394 140163970426688 run_atari_cramer_staircase.py:967] iteration: 153, frame: 153000000, eval_episode_return:  2903.75, train_episode_return:  3816.28, eval_num_episodes:  16, train_num_episodes: 113, eval_frame_rate: 1172, train_frame_rate:  515, train_exploration_epsilon: 0.010, normalized_return: 0.665, capped_normalized_return: 0.665, human_gap: 0.335
+I0523 00:43:11.576376 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 154.
+I0523 01:16:31.070438 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 154.
+I0523 01:22:50.167965 140163970426688 run_atari_cramer_staircase.py:967] iteration: 154, frame: 154000000, eval_episode_return:  4112.86, train_episode_return:  4104.89, eval_num_episodes:  28, train_num_episodes:  92, eval_frame_rate: 1319, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 0.948, capped_normalized_return: 0.948, human_gap: 0.052
+I0523 01:22:50.490216 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 155.
+I0523 01:56:19.430512 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 155.
+I0523 02:03:05.838748 140163970426688 run_atari_cramer_staircase.py:967] iteration: 155, frame: 155000000, eval_episode_return:  4791.67, train_episode_return:  3929.31, eval_num_episodes:  12, train_num_episodes:  58, eval_frame_rate: 1230, train_frame_rate:  498, train_exploration_epsilon: 0.010, normalized_return: 1.107, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 02:03:06.161484 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 156.
+I0523 02:35:49.515734 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 156.
+I0523 02:43:28.452605 140163970426688 run_atari_cramer_staircase.py:967] iteration: 156, frame: 156000000, eval_episode_return:  3730.00, train_episode_return:  4000.24, eval_num_episodes:  10, train_num_episodes:  82, eval_frame_rate: 1089, train_frame_rate:  509, train_exploration_epsilon: 0.010, normalized_return: 0.858, capped_normalized_return: 0.858, human_gap: 0.142
+I0523 02:43:28.775981 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 157.
+I0523 03:16:27.776738 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 157.
+I0523 03:24:17.951519 140163970426688 run_atari_cramer_staircase.py:967] iteration: 157, frame: 157000000, eval_episode_return:  4239.23, train_episode_return:  4057.21, eval_num_episodes:  78, train_num_episodes: 111, eval_frame_rate: 1063, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.978, capped_normalized_return: 0.978, human_gap: 0.022
+I0523 03:24:18.275936 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 158.
+I0523 03:57:25.925194 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 158.
+I0523 04:05:18.267946 140163970426688 run_atari_cramer_staircase.py:967] iteration: 158, frame: 158000000, eval_episode_return:  3364.64, train_episode_return:  3936.09, eval_num_episodes:  84, train_num_episodes: 151, eval_frame_rate: 1059, train_frame_rate:  503, train_exploration_epsilon: 0.010, normalized_return: 0.773, capped_normalized_return: 0.773, human_gap: 0.227
+I0523 04:05:18.591433 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 159.
+I0523 04:38:51.592139 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 159.
+I0523 04:46:40.225886 140163970426688 run_atari_cramer_staircase.py:967] iteration: 159, frame: 159000000, eval_episode_return:  4673.00, train_episode_return:  4231.74, eval_num_episodes:  10, train_num_episodes:  92, eval_frame_rate: 1067, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 1.079, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 04:46:40.552993 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 160.
+I0523 05:21:17.228261 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 160.
+I0523 05:28:14.931994 140163970426688 run_atari_cramer_staircase.py:967] iteration: 160, frame: 160000000, eval_episode_return:  4120.37, train_episode_return:  3961.82, eval_num_episodes:  27, train_num_episodes:  77, eval_frame_rate: 1197, train_frame_rate:  482, train_exploration_epsilon: 0.010, normalized_return: 0.950, capped_normalized_return: 0.950, human_gap: 0.050
+I0523 05:28:15.255987 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 161.
+I0523 06:02:16.753748 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 161.
+I0523 06:10:12.352516 140163970426688 run_atari_cramer_staircase.py:967] iteration: 161, frame: 161000000, eval_episode_return:  4076.25, train_episode_return:  4173.44, eval_num_episodes:  16, train_num_episodes:  90, eval_frame_rate: 1051, train_frame_rate:  490, train_exploration_epsilon: 0.010, normalized_return: 0.939, capped_normalized_return: 0.939, human_gap: 0.061
+I0523 06:10:12.677996 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 162.
+I0523 06:43:20.488297 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 162.
+I0523 06:51:05.229447 140163970426688 run_atari_cramer_staircase.py:967] iteration: 162, frame: 162000000, eval_episode_return:  4300.00, train_episode_return:  4223.14, eval_num_episodes:  12, train_num_episodes:  86, eval_frame_rate: 1076, train_frame_rate:  503, train_exploration_epsilon: 0.010, normalized_return: 0.992, capped_normalized_return: 0.992, human_gap: 0.008
+I0523 06:51:05.552915 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 163.
+I0523 07:23:42.835280 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 163.
+I0523 07:31:31.352570 140163970426688 run_atari_cramer_staircase.py:967] iteration: 163, frame: 163000000, eval_episode_return:  5414.00, train_episode_return:  4224.15, eval_num_episodes:  25, train_num_episodes:  53, eval_frame_rate: 1067, train_frame_rate:  511, train_exploration_epsilon: 0.010, normalized_return: 1.253, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 07:31:31.673894 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 164.
+I0523 08:04:42.756614 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 164.
+I0523 08:12:03.964768 140163970426688 run_atari_cramer_staircase.py:967] iteration: 164, frame: 164000000, eval_episode_return:  4831.62, train_episode_return:  4001.44, eval_num_episodes:  37, train_num_episodes:  90, eval_frame_rate: 1133, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 1.116, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 08:12:04.286463 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 165.
+I0523 08:45:38.976373 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 165.
+I0523 08:51:57.438636 140163970426688 run_atari_cramer_staircase.py:967] iteration: 165, frame: 165000000, eval_episode_return:  4283.33, train_episode_return:  3768.13, eval_num_episodes:   6, train_num_episodes:  75, eval_frame_rate: 1321, train_frame_rate:  496, train_exploration_epsilon: 0.010, normalized_return: 0.988, capped_normalized_return: 0.988, human_gap: 0.012
+I0523 08:51:57.771160 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 166.
+I0523 09:25:29.682078 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 166.
+I0523 09:32:23.912533 140163970426688 run_atari_cramer_staircase.py:967] iteration: 166, frame: 166000000, eval_episode_return:  3519.19, train_episode_return:  3996.57, eval_num_episodes:  37, train_num_episodes:  70, eval_frame_rate: 1207, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 0.809, capped_normalized_return: 0.809, human_gap: 0.191
+I0523 09:32:24.233517 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 167.
+I0523 10:05:08.882543 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 167.
+I0523 10:12:59.145923 140163970426688 run_atari_cramer_staircase.py:967] iteration: 167, frame: 167000000, eval_episode_return:  3206.00, train_episode_return:  3774.00, eval_num_episodes:  10, train_num_episodes:  95, eval_frame_rate: 1063, train_frame_rate:  509, train_exploration_epsilon: 0.010, normalized_return: 0.736, capped_normalized_return: 0.736, human_gap: 0.264
+I0523 10:12:59.467581 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 168.
+I0523 10:45:46.431899 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 168.
+I0523 10:53:32.498225 140163970426688 run_atari_cramer_staircase.py:967] iteration: 168, frame: 168000000, eval_episode_return:  5052.50, train_episode_return:  4348.04, eval_num_episodes:  12, train_num_episodes:  46, eval_frame_rate: 1073, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 1.168, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 10:53:32.819988 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 169.
+I0523 11:26:13.934519 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 169.
+I0523 11:34:08.776495 140163970426688 run_atari_cramer_staircase.py:967] iteration: 169, frame: 169000000, eval_episode_return:  3590.77, train_episode_return:  3776.62, eval_num_episodes:  13, train_num_episodes:  80, eval_frame_rate: 1053, train_frame_rate:  510, train_exploration_epsilon: 0.010, normalized_return: 0.826, capped_normalized_return: 0.826, human_gap: 0.174
+I0523 11:34:09.098811 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 170.
+I0523 12:08:01.305139 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 170.
+I0523 12:15:20.758545 140163970426688 run_atari_cramer_staircase.py:967] iteration: 170, frame: 170000000, eval_episode_return:  5245.90, train_episode_return:  3997.23, eval_num_episodes:  39, train_num_episodes: 148, eval_frame_rate: 1138, train_frame_rate:  492, train_exploration_epsilon: 0.010, normalized_return: 1.213, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 12:15:21.082343 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 171.
+I0523 12:49:33.935263 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 171.
+I0523 12:56:36.586969 140163970426688 run_atari_cramer_staircase.py:967] iteration: 171, frame: 171000000, eval_episode_return:  4255.76, train_episode_return:  4312.70, eval_num_episodes:  59, train_num_episodes: 137, eval_frame_rate: 1183, train_frame_rate:  487, train_exploration_epsilon: 0.010, normalized_return: 0.982, capped_normalized_return: 0.982, human_gap: 0.018
+I0523 12:56:36.914723 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 172.
+I0523 13:31:26.588503 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 172.
+I0523 13:40:12.311713 140163970426688 run_atari_cramer_staircase.py:967] iteration: 172, frame: 172000000, eval_episode_return:  5230.00, train_episode_return:  3974.69, eval_num_episodes:  14, train_num_episodes: 128, eval_frame_rate:  951, train_frame_rate:  479, train_exploration_epsilon: 0.010, normalized_return: 1.210, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 13:40:12.636875 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 173.
+I0523 14:15:29.428622 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 173.
+I0523 14:24:03.675168 140163970426688 run_atari_cramer_staircase.py:967] iteration: 173, frame: 173000000, eval_episode_return:  4854.85, train_episode_return:  4182.13, eval_num_episodes:  33, train_num_episodes:  61, eval_frame_rate:  972, train_frame_rate:  472, train_exploration_epsilon: 0.010, normalized_return: 1.122, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 14:24:04.000783 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 174.
+I0523 14:58:34.257647 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 174.
+I0523 15:05:03.696478 140163970426688 run_atari_cramer_staircase.py:967] iteration: 174, frame: 174000000, eval_episode_return:  4294.83, train_episode_return:  4079.29, eval_num_episodes:  29, train_num_episodes:  85, eval_frame_rate: 1284, train_frame_rate:  483, train_exploration_epsilon: 0.010, normalized_return: 0.991, capped_normalized_return: 0.991, human_gap: 0.009
+I0523 15:05:04.017496 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 175.
+I0523 15:39:35.522356 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 175.
+I0523 15:47:31.259703 140163970426688 run_atari_cramer_staircase.py:967] iteration: 175, frame: 175000000, eval_episode_return:  5756.00, train_episode_return:  4107.98, eval_num_episodes:  20, train_num_episodes:  94, eval_frame_rate: 1051, train_frame_rate:  483, train_exploration_epsilon: 0.010, normalized_return: 1.333, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 15:47:31.583333 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 176.
+I0523 16:20:20.128387 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 176.
+I0523 16:28:05.045150 140163970426688 run_atari_cramer_staircase.py:967] iteration: 176, frame: 176000000, eval_episode_return:  4199.33, train_episode_return:  3863.65, eval_num_episodes:  15, train_num_episodes:  63, eval_frame_rate: 1075, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.968, capped_normalized_return: 0.968, human_gap: 0.032
+I0523 16:28:05.368018 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 177.
+I0523 17:01:27.405215 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 177.
+I0523 17:09:16.437608 140163970426688 run_atari_cramer_staircase.py:967] iteration: 177, frame: 177000000, eval_episode_return:  4797.39, train_episode_return:  4137.50, eval_num_episodes:  23, train_num_episodes:  96, eval_frame_rate: 1066, train_frame_rate:  499, train_exploration_epsilon: 0.010, normalized_return: 1.108, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 17:09:16.760109 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 178.
+I0523 17:43:11.987727 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 178.
+I0523 17:50:16.432657 140163970426688 run_atari_cramer_staircase.py:967] iteration: 178, frame: 178000000, eval_episode_return:  3746.00, train_episode_return:  4060.95, eval_num_episodes:  15, train_num_episodes: 105, eval_frame_rate: 1178, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.862, capped_normalized_return: 0.862, human_gap: 0.138
+I0523 17:50:16.756993 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 179.
+I0523 18:24:34.297352 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 179.
+I0523 18:31:40.428604 140163970426688 run_atari_cramer_staircase.py:967] iteration: 179, frame: 179000000, eval_episode_return:  5824.25, train_episode_return:  4390.94, eval_num_episodes:  40, train_num_episodes: 106, eval_frame_rate: 1173, train_frame_rate:  486, train_exploration_epsilon: 0.010, normalized_return: 1.349, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 18:31:40.763990 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 180.
+I0523 19:05:38.962991 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 180.
+I0523 19:13:33.598657 140163970426688 run_atari_cramer_staircase.py:967] iteration: 180, frame: 180000000, eval_episode_return:  4380.36, train_episode_return:  4055.56, eval_num_episodes:  28, train_num_episodes:  63, eval_frame_rate: 1053, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 1.011, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 19:13:33.920239 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 181.
+I0523 19:46:55.726507 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 181.
+I0523 19:54:52.717095 140163970426688 run_atari_cramer_staircase.py:967] iteration: 181, frame: 181000000, eval_episode_return:  4722.14, train_episode_return:  4120.33, eval_num_episodes:  14, train_num_episodes:  92, eval_frame_rate: 1048, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 1.091, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 19:54:53.040712 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 182.
+I0523 20:28:09.545909 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 182.
+I0523 20:35:47.053791 140163970426688 run_atari_cramer_staircase.py:967] iteration: 182, frame: 182000000, eval_episode_return:  5810.00, train_episode_return:  4033.29, eval_num_episodes:  23, train_num_episodes:  76, eval_frame_rate: 1093, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 1.346, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 20:35:47.377363 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 183.
+I0523 21:08:48.680086 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 183.
+I0523 21:15:31.062027 140163970426688 run_atari_cramer_staircase.py:967] iteration: 183, frame: 183000000, eval_episode_return:  4143.10, train_episode_return:  3819.01, eval_num_episodes:  29, train_num_episodes:  81, eval_frame_rate: 1243, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 0.955, capped_normalized_return: 0.955, human_gap: 0.045
+I0523 21:15:31.383259 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 184.
+I0523 21:49:28.198539 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 184.
+I0523 21:56:35.074810 140163970426688 run_atari_cramer_staircase.py:967] iteration: 184, frame: 184000000, eval_episode_return:  4344.93, train_episode_return:  3776.83, eval_num_episodes:  73, train_num_episodes: 101, eval_frame_rate: 1171, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 1.002, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 21:56:35.396418 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 185.
+I0523 22:30:38.524549 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 185.
+I0523 22:38:36.452743 140163970426688 run_atari_cramer_staircase.py:967] iteration: 185, frame: 185000000, eval_episode_return:  4548.00, train_episode_return:  4159.09, eval_num_episodes:   5, train_num_episodes:  99, eval_frame_rate: 1046, train_frame_rate:  489, train_exploration_epsilon: 0.010, normalized_return: 1.050, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 22:38:36.776732 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 186.
+I0523 23:12:40.473779 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 186.
+I0523 23:20:34.353183 140163970426688 run_atari_cramer_staircase.py:967] iteration: 186, frame: 186000000, eval_episode_return:  5685.83, train_episode_return:  4271.91, eval_num_episodes:  12, train_num_episodes:  68, eval_frame_rate: 1055, train_frame_rate:  489, train_exploration_epsilon: 0.010, normalized_return: 1.316, capped_normalized_return: 1.000, human_gap: 0.000
+I0523 23:20:34.676919 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 187.
+I0523 23:53:23.237194 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 187.
+I0524 00:00:54.081214 140163970426688 run_atari_cramer_staircase.py:967] iteration: 187, frame: 187000000, eval_episode_return:  4142.86, train_episode_return:  4118.44, eval_num_episodes:   7, train_num_episodes:  77, eval_frame_rate: 1109, train_frame_rate:  508, train_exploration_epsilon: 0.010, normalized_return: 0.955, capped_normalized_return: 0.955, human_gap: 0.045
+I0524 00:00:54.402932 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 188.
+I0524 00:33:54.795654 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 188.
+I0524 00:40:27.708418 140163970426688 run_atari_cramer_staircase.py:967] iteration: 188, frame: 188000000, eval_episode_return:  4988.12, train_episode_return:  3880.20, eval_num_episodes:  16, train_num_episodes:  99, eval_frame_rate: 1273, train_frame_rate:  505, train_exploration_epsilon: 0.010, normalized_return: 1.153, capped_normalized_return: 1.000, human_gap: 0.000
+I0524 00:40:28.031411 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 189.
+I0524 01:13:43.902053 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 189.
+I0524 01:20:20.674676 140163970426688 run_atari_cramer_staircase.py:967] iteration: 189, frame: 189000000, eval_episode_return:  3231.50, train_episode_return:  3812.42, eval_num_episodes:  20, train_num_episodes:  99, eval_frame_rate: 1260, train_frame_rate:  501, train_exploration_epsilon: 0.010, normalized_return: 0.742, capped_normalized_return: 0.742, human_gap: 0.258
+I0524 01:20:20.997805 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 190.
+I0524 01:53:07.315085 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 190.
+I0524 02:00:42.839806 140163970426688 run_atari_cramer_staircase.py:967] iteration: 190, frame: 190000000, eval_episode_return:  2240.37, train_episode_return:  3920.41, eval_num_episodes:  82, train_num_episodes:  98, eval_frame_rate: 1098, train_frame_rate:  509, train_exploration_epsilon: 0.010, normalized_return: 0.509, capped_normalized_return: 0.509, human_gap: 0.491
+I0524 02:00:43.162167 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 191.
+I0524 02:33:53.973787 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 191.
+I0524 02:41:46.864162 140163970426688 run_atari_cramer_staircase.py:967] iteration: 191, frame: 191000000, eval_episode_return:  3909.43, train_episode_return:  4092.82, eval_num_episodes:  35, train_num_episodes:  78, eval_frame_rate: 1057, train_frame_rate:  502, train_exploration_epsilon: 0.010, normalized_return: 0.900, capped_normalized_return: 0.900, human_gap: 0.100
+I0524 02:41:47.186864 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 192.
+I0524 03:14:49.959646 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 192.
+I0524 03:22:49.106285 140163970426688 run_atari_cramer_staircase.py:967] iteration: 192, frame: 192000000, eval_episode_return:  5496.67, train_episode_return:  4154.36, eval_num_episodes:  36, train_num_episodes: 110, eval_frame_rate: 1044, train_frame_rate:  504, train_exploration_epsilon: 0.010, normalized_return: 1.272, capped_normalized_return: 1.000, human_gap: 0.000
+I0524 03:22:49.430144 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 193.
+I0524 03:56:09.844678 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 193.
+I0524 04:03:36.735545 140163970426688 run_atari_cramer_staircase.py:967] iteration: 193, frame: 193000000, eval_episode_return:  5728.33, train_episode_return:  4231.58, eval_num_episodes:  60, train_num_episodes: 114, eval_frame_rate: 1119, train_frame_rate:  500, train_exploration_epsilon: 0.010, normalized_return: 1.326, capped_normalized_return: 1.000, human_gap: 0.000
+I0524 04:03:37.058713 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 194.
+I0524 04:37:34.491591 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 194.
+I0524 04:43:57.672999 140163970426688 run_atari_cramer_staircase.py:967] iteration: 194, frame: 194000000, eval_episode_return:  4177.50, train_episode_return:  4264.46, eval_num_episodes:  20, train_num_episodes: 101, eval_frame_rate: 1305, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 0.963, capped_normalized_return: 0.963, human_gap: 0.037
+I0524 04:43:57.998411 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 195.
+I0524 05:18:29.486002 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 195.
+I0524 05:26:50.029235 140163970426688 run_atari_cramer_staircase.py:967] iteration: 195, frame: 195000000, eval_episode_return:  5655.76, train_episode_return:  4463.36, eval_num_episodes:  33, train_num_episodes: 107, eval_frame_rate:  999, train_frame_rate:  483, train_exploration_epsilon: 0.010, normalized_return: 1.309, capped_normalized_return: 1.000, human_gap: 0.000
+I0524 05:26:50.352316 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 196.
+I0524 06:01:34.443931 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 196.
+I0524 06:10:02.427235 140163970426688 run_atari_cramer_staircase.py:967] iteration: 196, frame: 196000000, eval_episode_return:  4143.85, train_episode_return:  4466.74, eval_num_episodes:  13, train_num_episodes:  92, eval_frame_rate:  984, train_frame_rate:  480, train_exploration_epsilon: 0.010, normalized_return: 0.955, capped_normalized_return: 0.955, human_gap: 0.045
+I0524 06:10:02.750372 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 197.
+I0524 06:43:57.488254 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 197.
+I0524 06:51:55.630004 140163970426688 run_atari_cramer_staircase.py:967] iteration: 197, frame: 197000000, eval_episode_return:  5615.83, train_episode_return:  4486.61, eval_num_episodes:  12, train_num_episodes:  56, eval_frame_rate: 1046, train_frame_rate:  491, train_exploration_epsilon: 0.010, normalized_return: 1.300, capped_normalized_return: 1.000, human_gap: 0.000
+I0524 06:51:55.953381 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 198.
+I0524 07:25:20.990666 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 198.
+I0524 07:32:24.605735 140163970426688 run_atari_cramer_staircase.py:967] iteration: 198, frame: 198000000, eval_episode_return:  2695.00, train_episode_return:  4370.00, eval_num_episodes:  62, train_num_episodes:  47, eval_frame_rate: 1180, train_frame_rate:  499, train_exploration_epsilon: 0.010, normalized_return: 0.616, capped_normalized_return: 0.616, human_gap: 0.384
+I0524 07:32:24.929190 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 199.
+I0524 08:06:15.806343 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 199.
+I0524 08:12:58.061699 140163970426688 run_atari_cramer_staircase.py:967] iteration: 199, frame: 199000000, eval_episode_return:  3755.56, train_episode_return:  3756.19, eval_num_episodes:   9, train_num_episodes: 126, eval_frame_rate: 1243, train_frame_rate:  492, train_exploration_epsilon: 0.010, normalized_return: 0.864, capped_normalized_return: 0.864, human_gap: 0.136
+I0524 08:12:58.384364 140163970426688 run_atari_cramer_staircase.py:936] Training iteration 200.
+I0524 08:46:29.469859 140163970426688 run_atari_cramer_staircase.py:942] Evaluation iteration 200.
+I0524 08:53:45.935604 140163970426688 run_atari_cramer_staircase.py:967] iteration: 200, frame: 200000000, eval_episode_return:  4964.32, train_episode_return:  4255.90, eval_num_episodes:  74, train_num_episodes: 134, eval_frame_rate: 1146, train_frame_rate:  497, train_exploration_epsilon: 0.010, normalized_return: 1.147, capped_normalized_return: 1.000, human_gap: 0.000
